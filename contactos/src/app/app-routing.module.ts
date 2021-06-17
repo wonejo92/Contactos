@@ -22,7 +22,12 @@ const routes: Routes = [
   {
     path: 'crear',
     loadChildren: () => import('./pages/contactos/crear/crear.module').then( m => m.CrearPageModule)
-  }
+  },
+  {
+    path: 'update',
+    loadChildren: () => import('./pages/contactos/update/update.module').then( m => m.UpdatePageModule)
+  },
+
 ];
 
 @NgModule({

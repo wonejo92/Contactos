@@ -13,6 +13,8 @@ export class ListaPage implements OnInit {
   ngOnInit() {
   }
 
+  public data=[]
+
   public contactos = [
     { Nombre: 'Juan Andrade', Telefono: '0991463702', Mail: 'Jandrade@gmail.com' },
     { Nombre: 'Pedro Calle', Telefono: '0993296123', Mail: 'Pcalle@gmail.com' },
@@ -22,7 +24,11 @@ export class ListaPage implements OnInit {
 
   add(){
     this.router.navigate(['crear'])
-  }  
+  } 
+  update(){
+
+    this.router.navigate(['update'])
+  }
   
   showInfoContact(nombre:String,telefono:String,mail:String){
     console.log("El contacto seleccionado es" + " Nombre: " + nombre + " Telefono: " + telefono + " Mail: "+ mail)

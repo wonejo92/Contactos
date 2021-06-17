@@ -1,32 +1,34 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>New Contact</ion-title>
+    <ion-title>Update</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-img   style="width: 150px; height: 150px; margin-left: auto; margin-right: auto;" src="../../../../assets/person.jpg"></ion-img>
+
+  <ion-img   style="width: 150px; height: 150px; margin-left: auto; margin-right: auto;" src="../../../../assets/avatar.png"></ion-img>
   <!-- Input with placeholder -->
 
   
  <form>
   <ion-item>
     <ion-label position="fixed">Nombre:</ion-label>
-    <ion-input  placeholder="Jose"></ion-input>
+    <ion-input></ion-input>
   </ion-item>
   <br>
   <ion-item>
     <ion-label position="fixed">Telefono:</ion-label>
-    <ion-input type="number" placeholder="0994576134"></ion-input>
+    <ion-input ></ion-input>
   </ion-item>
   <br>
   <ion-item>
     <ion-label position="fixed">Mail:</ion-label>
-    <ion-input type="email" placeholder="Jose@gmail.com"></ion-input>
+    <ion-input ></ion-input>
   </ion-item>
   <br>
  <ion-button color="success"expand="block" (click)="save()">Save Contact</ion-button>
 </form> 
  
+
 
 </ion-content>
