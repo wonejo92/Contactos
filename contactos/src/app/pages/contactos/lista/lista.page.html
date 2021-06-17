@@ -1,16 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>lista</ion-title>
+    <ion-buttons  Slot="start">
+      <ion-back-button  defaultHref="/folder/Inbox"></ion-back-button>
+    </ion-buttons>
+    <ion-title>CONTACTS</ion-title>
+    <ion-icon size="large"  slot="end" name="help-circle"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-list >
-    <ion-list-header>
-      Contacts
-     </ion-list-header>
-
+    <br>
      <ion-item *ngFor="let c of contactos; let i = index">
       <ion-avatar slot="start">
         <img src="../../../../assets/avatar.png">
@@ -20,7 +21,7 @@
         <h3>{{c.Telefono}}</h3>
         <p>{{c.Mail}}</p>
       </ion-label>
-      <ion-button (click)="update()" color="success" expand="block" fill="outline">Edit Contact</ion-button>
+      <ion-button (click)="update(c.Nombre,c.Telefono,c.Mail)" color="success" expand="block" fill="outline">Edit Contact</ion-button>
     </ion-item>
  
   </ion-list>

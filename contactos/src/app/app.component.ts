@@ -9,7 +9,7 @@ export class AppComponent {
   public appPages = [
     { title: 'Contacts', url: '/lista', icon: 'people' },
     { title: 'About', url: '/about', icon: 'information-circle' },
-    { title: 'GitHub', url: '/folder/GitHub', icon: 'git-branch' },
+    { title: 'GitHub', url: '/github', icon: 'git-branch' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor(public alertController: AlertController) {}

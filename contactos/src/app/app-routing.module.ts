@@ -24,8 +24,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/contactos/crear/crear.module').then( m => m.CrearPageModule)
   },
   {
-    path: 'update',
+    path: 'update/:nombre/:telefono/:mail',
     loadChildren: () => import('./pages/contactos/update/update.module').then( m => m.UpdatePageModule)
+  },
+  {
+    path: 'github',
+    loadChildren: () => import('./pages/github/github.module').then( m => m.GithubPageModule)
   },
 
 ];
