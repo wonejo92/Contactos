@@ -12,11 +12,11 @@
 
   <ion-list >
     <br>
-     <ion-item *ngFor="let c of contactos; let i = index">
+     <ion-item  *ngFor="let c of contactos; let i = index">
       <ion-avatar slot="start">
         <img src="../../../../assets/avatar.png">
       </ion-avatar>
-      <ion-label>
+      <ion-label (click)="showMenu(c.Nombre)">
         <h2>{{c.Nombre}}</h2>
         <h3>{{c.Telefono}}</h3>
         <p>{{c.Mail}}</p>
