@@ -54,7 +54,7 @@ export class ListaPage implements OnInit {
         text: 'Call',
         icon: 'call',
         handler: () => {
-          console.log('Play clicked');
+          console.log('Call clicked');
         }
       },{
         text: 'Cancel',
