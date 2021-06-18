@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
 import { ActionSheetController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.page.html',
@@ -33,7 +34,7 @@ export class ListaPage implements OnInit {
   showInfoContact(nombre:String,telefono:String,mail:String){
     console.log("El contacto seleccionado es" + " Nombre: " + nombre + " Telefono: " + telefono + " Mail: "+ mail)
   }
-  async showMenu(nombre:string) {
+  async showMenu(nombre:string,telefono:string) {
     const actionSheet = await this.actionSheetController.create({
       header: nombre,
       cssClass: 'my-custom-class',
