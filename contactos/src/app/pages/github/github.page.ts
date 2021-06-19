@@ -12,4 +12,8 @@ export class GithubPage implements OnInit {
   ngOnInit() {
   }
 
+  hola(){
+    console.log("hola")
+  }
+
 }
